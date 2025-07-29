@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>책정보 - booklnput.html</title>
+		<link href="../image/icon.png" rel="icon" type="image/x-icon" />
+		<style>
+			input[type="text"]{width: 250px;}
+			#regBtn{margin-top:8px; width:320px;}
+		</style>
+</head>
+<body>
+	<h4>책 정보 입력</h4>
+	
+	<form name="bookForm" id="bookForm">
+		<label>책제목</label>
+		<input type="text" name="title" id="title" class="inputData" />
+		<span class="message"></span>
+		<br />
+		<label>책저자</label>
+		<input type="text" name="author" id="author" class="inputData" />
+		<span class="message"></span>
+		<br />
+		<label>출판사</label>
+		<input type="text" name="publisher" id="publisher" class="inputData" />
+		<span class="message"></span>
+		<br />
+		
+		<button type="button" id="regBtn">등록</button>
+	</form>
+	
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/booklnput.js"></script>
+
+</body>
+</html>
