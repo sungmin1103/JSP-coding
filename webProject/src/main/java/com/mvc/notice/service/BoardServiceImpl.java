@@ -1,4 +1,4 @@
-package com.mvc.board.service;
+package com.mvc.notice.service;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.mvc.board.controller;
+package com.mvc.notice.controller;
 
 import java.util.List;
 

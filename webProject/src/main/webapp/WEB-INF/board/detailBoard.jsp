@@ -11,9 +11,23 @@
 		</form>
 		
 		<div class="row text-center mb-2">
-			<div class="col-md-9 text-start">	
+			<div class="col-md-9 text-start" id="pwdFormArea">
+						<form id="pwdForm" class="row g-3">
+					<input type="hidden" name="num" value="${detail.num}" />
+					<div class="col-auto">
+						<label for="passwd" class="visually-hidden">비밀번호</label>
+						<input type="password" class="form-control form-control-sm" name="passwd" id="passwd" placeholder="비밀번호 입력" />
+					</div>
+					<div class="col-auto">
+						<button type="button" id="passwdBtn" class="btn btn-secondary btn-sm">확인</button>
+						<button type="button" id="passwdCancleBtn" class="btn btn-secondary btn-sm">취소</button>
+						 </div>
+						 <div class="col-auto">
+						 	<span id="message" class="align-middle"></span>
+						 </div>
+					</form>		
+						</div>
 						
-			</div>
 			<div class="col-md-3 text-end">
 				<button type="button" id="updateFormBtn" class="btn btn-primary btn-sm" >글수정</button>
 				<button type="button" id="boardDeleteBtn" class="btn btn-primary btn-sm">글삭제</button>

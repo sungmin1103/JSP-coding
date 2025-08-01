@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="text-center"><h3>게시판 리스트</h3></div>	
 		
-		<form id="f_ipdateForm">
+		<form id="f_updateForm">
 			<div class="text-center">
 			<%-- 반드시 수정할 글번호를 서버에 전달해 주어야 한다 --%>
 			<input type="hidden" name="num" id="num" value="${updateData.num}">

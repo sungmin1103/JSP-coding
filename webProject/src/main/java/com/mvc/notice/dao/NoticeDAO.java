@@ -1,4 +1,4 @@
-package com.mvc.board.dao;
+package com.mvc.notice.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,17 +11,17 @@ import static com.mvc.common.util.DBUtil.getConnection;
 
 import com.mvc.board.vo.BoardVO;
 
-public class BoardDAO {
-	private static BoardDAO instance =null;
+public class NoticeDAO {
+	private static NoticeDAO instance =null;
 	
-	public static BoardDAO getInstance() {	//BoardDAO의 인스턴스는 BoardDAO.getInstance()
+	public static NoticeDAO getInstance() {	//BoardDAO의 인스턴스는 BoardDAO.getInstance()
 		if(instance==null) {
-			instance= new BoardDAO();
+			instance= new NoticeDAO();
 		}
 		return instance;
 	}
 	
-	private BoardDAO() {}	// 다른 클래스 new BoardDAO(); X
+	private NoticeDAO() {}	// 다른 클래스 new BoardDAO(); X
 	
 	private BoardVO addBoard(ResultSet rs) throws SQLException {
 		BoardVO boardVO = new BoardVO();

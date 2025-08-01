@@ -9,6 +9,10 @@ public class BoardVO {
 	private String writeday;	// 글 작성일
 	private String passwd;		// 비밀번호
 	
+	//조건검색시 사용할 속성
+	private String search;	//검색대상
+	private String keyword;	// 검색어
+	
 	public BoardVO() {
 	}
 
@@ -21,6 +25,7 @@ public class BoardVO {
 		this.readcnt = readcnt;
 		this.writeday = writeday;
 		this.passwd = passwd;
+		
 	}
 
 	public int getNum() {
@@ -77,6 +82,22 @@ public class BoardVO {
 
 	public void setPasswd(String passwd) {
 		this.passwd = passwd;
+	}
+
+	public String getSearch() {
+		return search;
+	}
+
+	public void setSearch(String search) {
+		this.search = search;
+	}
+
+	public String getKeyword() {
+		return keyword;
+	}
+
+	public void setKeyword(String keyword) {
+		this.keyword = keyword;
 	}
 
 	@Override
