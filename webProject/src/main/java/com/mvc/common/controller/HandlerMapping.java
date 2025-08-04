@@ -11,6 +11,8 @@ import com.mvc.board.controller.InsertFormController;
 import com.mvc.board.controller.PasswdCheckController;
 import com.mvc.board.controller.UpdateBoardController;
 import com.mvc.board.controller.UpdateFormController;
+import com.mvc.notice.controller.GetNoticeListController;
+import com.mvc.notice.controller.InsertNoticeController;
 
 public class HandlerMapping {
 	private Map<String, Controller> mappings;
@@ -27,6 +29,9 @@ public class HandlerMapping {
 		 mappings.put("/board/updateBoard.do", new UpdateBoardController());
 		 mappings.put("/board/deleteBoard.do", new DeleteBoardController());
 		 mappings.put("/board/passwdCheck.do", new PasswdCheckController());	/* 본인글 여부 확인 */
+		 mappings.put("/notice/getNoticeList.do", new GetNoticeListController());
+		 mappings.put("/notice/insertForm.do", new com.mvc.notice.controller.InsertFormController());
+		 mappings.put("/notice/insertNoticeController", new InsertNoticeController());
 	}
 	
 	public Controller getController(String path) { 	// 게시판리스트일 경우 path="/board/getBoardList.do"

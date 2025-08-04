@@ -9,7 +9,7 @@ public class InsertFormController implements Controller {
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
-		return "/board/insertForm";
+		return "/notice/insertForm";
 	}
 
 }
